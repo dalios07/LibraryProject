@@ -1,7 +1,5 @@
 package com.example.demo.dtos;
 
-import com.example.demo.entites.Book;
-import com.example.demo.entites.Student;
 import lombok.Data;
 
 import java.util.Date;

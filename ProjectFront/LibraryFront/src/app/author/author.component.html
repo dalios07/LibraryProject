@@ -1,0 +1,88 @@
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <div class="input-group input-group-outline">
+              <label class="form-label">Search...</label>
+              <input type="text" name="search" class="form-control" [(ngModel)]="searchvalue" (input)="onSearchValueChange()">
+            </div>
+          </div>
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item d-flex align-items-center">
+              <a (click)="Navigate()"class="btn btn-outline-primary btn-sm mb-0 me-3"  >Add a New Author</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+        <div class="row">
+        <div class="col-12">
+            <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                <h6 class="text-white text-capitalize ps-3">Author table</h6>
+                </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+                <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                    <thead>
+                    <tr>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Creation Date</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Updating Date</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</th>
+                        <th class="text-secondary opacity-7"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let item of List">
+                        <td>
+                        <div class="d-flex px-2 py-1">
+                            
+                            <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">{{item.name}}</h6>
+                            
+                            </div>
+                        </div>
+                        </td>
+                        
+                        
+                        <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{item.creationDate| date:'dd/MM/yyyy HH:mm'}}</span>
+                        </td>
+                        <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">{{item.updatingDate| date:'dd/MM/yyyy HH:mm'}}</span>
+                            </td>
+                        <td class="align-middle text-center">
+                            <a  (click)="Navigate1(item.id)" class="edit"  ><i class="material-icons"  title="Edit">&#xE254;</i></a>
+							<a  (click)="Delete(item.id)" class="delete" ><i class="material-icons"  title="Delete">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+                <div class="clearfix">
+                    
+                    <ul class="pagination">
+                        <li class="page-item" (click)="previousPage()" ><a  class="page-link">prev</a></li>
+                        <li class="page-item "  *ngFor="let i of getRange(nbOfPages)" (click)="changePage(i)"><a  class="page-link">{{i}}</a></li>
+                        
+                        <li class="page-item"  (click)="nextPage()" ><a  class="page-link">Next</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+        
+    </div>
+</main>

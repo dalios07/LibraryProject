@@ -1,0 +1,60 @@
+
+<main class="main-content  mt-0">
+    <section>
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto ">
+              <div class="card card-plain">
+                <div class="card-header">
+                  <h4 class="font-weight-bolder">Add a New Book</h4>
+                  <p class="mb-0">Enter the Book Name With All this Details</p>
+                </div>
+                <div class="card-body">
+                  <form role="form" (ngSubmit)="submitForm()">
+                    <div class="input-group input-group-outline mb-3">
+                      
+                      <input type="text" name="name" class="form-control"  [(ngModel)]="Book.name" placeholder="name">
+                    </div>
+                   
+                      
+                      <div class="input-group input-group-outline mb-3">
+                      
+                        <input type="text" name="totalCopies" class="form-control"  [(ngModel)]="Book.totalCopies" placeholder="totalCopies">
+                      </div>
+                      <div class="input-group input-group-outline mb-3">
+                      
+                        <input type="text" name="isbn" class="form-control"  [(ngModel)]="Book.isbn" placeholder="isbn">
+                      </div>
+                      <div class="input-group input-group-outline mb-3">
+                      
+                        <input type="text" name="price" class="form-control"  [(ngModel)]="Book.price" placeholder="price">
+                      </div>
+                      
+                      <div class="input-group input-group-outline mb-3">
+                      
+                        <p-dropdown [options]="CategoryList" [(ngModel)]="Book.categoryName"    name="category" placeholder=" Select a   Category"></p-dropdown>
+                                
+                    
+                                </div>
+                                <div class="input-group input-group-outline mb-3">
+                                
+                                  <p-dropdown [options]="AuthorList"  [(ngModel)]="Book.authorName"   name="author" placeholder=" Select an Author"></p-dropdown>
+                                          
+                              
+                                          </div>
+                   
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Submit</button>
+                    </div>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>

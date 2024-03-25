@@ -1,0 +1,8 @@
+span.badge.badge-sm.bg-gradient-success {
+    margin: 5px;
+    cursor: pointer;
+}
+span.badge.badge-sm.bg-gradient-danger {
+    
+    cursor: pointer;
+}

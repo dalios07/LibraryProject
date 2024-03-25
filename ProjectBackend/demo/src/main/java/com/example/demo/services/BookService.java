@@ -8,7 +8,11 @@ import org.springframework.data.domain.Pageable;
 public interface BookService {
     Page<BookDto> findAll(Pageable pageable);
 
+    BookDto findById(Long id);
+
     Book findByIsbn(String isbn);
+
+    Page<BookDto> searchBooks(String name, Pageable pageable);
 
     Book addBook(BookDto BookDto);
 

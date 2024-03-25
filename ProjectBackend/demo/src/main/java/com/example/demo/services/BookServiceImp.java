@@ -13,6 +13,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @AllArgsConstructor
 @Transactional
@@ -36,6 +38,22 @@ public class BookServiceImp implements BookService {
         });
     }
     @Override
+    public BookDto findById(Long id)
+    {
+        Optional<Book> book=bookRepository.findById(id);
+        if(book.isPresent())
+        {
+            BookDto bookDto= bookMapper.toBookDto(book.get());
+            bookDto.setCategoryName(book.get().getCategory().getName());
+            bookDto.setAuthorName(book.get().getAuthor().getName());
+            return  bookDto ;
+        }
+
+
+        throw new ResourceNotFoundException("Book not found with id " + id);
+
+    }
+    @Override
     public Book findByIsbn(String isbn)
     {
         if (!bookRepository.existsByIsbn(isbn)) {
@@ -43,6 +61,13 @@ public class BookServiceImp implements BookService {
         return bookRepository.findByIsbn(isbn);
     }
 
+    @Override
+    public Page<BookDto> searchBooks(String name, Pageable pageable)
+    {
+        Page<Book> books=bookRepository.findByNameContainingIgnoreCase(name, pageable);
+        return books.map(book -> bookMapper.toBookDto(book));
+
+    }
     @Override
     public Book addBook(BookDto BookDto) {
         Book book=bookMapper.toBook(BookDto);

@@ -8,7 +8,11 @@ import org.springframework.data.domain.Pageable;
 public interface AuthorService {
     Page<AuthorDto> findAll(Pageable pageable);
 
+    Author findById(Long id);
+
     Author findByName(String name);
+
+    Page<AuthorDto> searchAuthors(String name, Pageable pageable);
 
     Author addAuthor(AuthorDto AuthorDto);
 

@@ -1,6 +1,8 @@
 package com.example.demo.controllers;
 
+import com.example.demo.dtos.CategoryDto;
 import com.example.demo.dtos.IssueDto;
+import com.example.demo.entites.Category;
 import com.example.demo.entites.Issue;
 import com.example.demo.services.IssueService;
 import lombok.AllArgsConstructor;
@@ -24,6 +26,16 @@ public class IssueController {
         return(issueService.findAll(pageable));
 
     }
+    @GetMapping("/{id}")
+
+    public IssueDto GetById(@PathVariable("id") Long id)
+    {
+
+        return(issueService.findById(id));
+
+    }
+
+
 
     @PostMapping
 

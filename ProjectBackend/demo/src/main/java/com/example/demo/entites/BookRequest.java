@@ -21,6 +21,6 @@ public class BookRequest {
     @JoinColumn(name = "book_id")
     private Book book;
     @ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name= "student_id")
-    private Student student;
+    @JoinColumn(name= "user_id")
+    private User user;
 }

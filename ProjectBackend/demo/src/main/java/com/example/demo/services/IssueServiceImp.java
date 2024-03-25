@@ -1,7 +1,7 @@
 package com.example.demo.services;
 
 import com.example.demo.Exceptions.BookNotAvailbaleException;
-import com.example.demo.dtos.BookDto;
+import com.example.demo.Exceptions.ResourceNotFoundException;
 import com.example.demo.dtos.IssueDto;
 import com.example.demo.entites.*;
 import com.example.demo.mappers.BookMapper;
@@ -14,6 +14,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -23,7 +24,7 @@ public class IssueServiceImp  implements IssueService{
     private final IssueRepo issueRepository;
     private final IssueMapper issueMapper;
     private final BookService bookService;
-    private final StudentService studentService;
+    private final UserService userService;
     private final BookMapper bookMapper;
 
     @Override
@@ -34,18 +35,38 @@ public class IssueServiceImp  implements IssueService{
             IssueDto issueDto= issueMapper.toIssueDto(issue);
             issueDto.setBookName(issue.getBook().getName());
             issueDto.setIsbn(issue.getBook().getIsbn());
-            issueDto.setStudentName(issue.getStudent().getName());
-            issueDto.setStudentId(issue.getStudent().getId());
+            issueDto.setStudentName(issue.getUser().getName());
+            issueDto.setStudentId(issue.getUser().getId());
             return (issueDto);
         });
     }
     @Override
+    public  IssueDto findById(Long id)
+    {
+        Optional<Issue> issue=issueRepository.findById(id);
+        if(issue.isPresent())
+        {
+            Issue issue0=issue.get();
+            IssueDto issueDto= issueMapper.toIssueDto(issue0);
+            issueDto.setBookName(issue0.getBook().getName());
+            issueDto.setIsbn(issue0.getBook().getIsbn());
+            issueDto.setStudentName(issue0.getUser().getName());
+            issueDto.setStudentId(issue0.getUser().getId());
+            return issueDto;
+        }
+
+
+        throw new ResourceNotFoundException("Issue not found with id " + id);
+
+    }
+
+    @Override
     public Issue addIssue(IssueDto IssueDto) {
         Issue issue=issueMapper.toIssue(IssueDto);
-        Student student=studentService.findById(IssueDto.getStudentId());
+        User user = userService.findById(IssueDto.getStudentId());
         Book book=bookService.findByIsbn(IssueDto.getIsbn());
         issue.setBook(book);
-        issue.setStudent(student);
+        issue.setUser(user);
         if(Objects.equals(book.getIssuedCopies(), book.getTotalCopies()))
             throw new BookNotAvailbaleException("This book is not available now"+book.getIssuedCopies());
 
@@ -59,10 +80,10 @@ public class IssueServiceImp  implements IssueService{
     public Issue EditIssue(IssueDto IssueDto)
     {
         Issue issue=issueMapper.toIssue(IssueDto);
-        Student student=studentService.findById(IssueDto.getStudentId());
+        User user = userService.findById(IssueDto.getStudentId());
         Book book=bookService.findByIsbn(IssueDto.getIsbn());
         issue.setBook(book);
-        issue.setStudent(student);
+        issue.setUser(user);
         bookService.EditBook(-1,book);
         return (issueRepository.save(issue));
     }

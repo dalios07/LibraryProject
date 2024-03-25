@@ -2,6 +2,8 @@ package com.example.demo.repositories;
 
 import com.example.demo.Enums.status;
 import com.example.demo.entites.Category;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CategoryRepo extends JpaRepository<Category, Long> {
@@ -11,4 +13,6 @@ public interface CategoryRepo extends JpaRepository<Category, Long> {
     Category findByNameAndStatus(String name,status status);
 
     boolean existsByNameAndStatus(String name, status status);
+
+    Page<Category> findByNameContainingIgnoreCase(String name, Pageable pageable);
 }

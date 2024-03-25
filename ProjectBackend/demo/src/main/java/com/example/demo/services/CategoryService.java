@@ -17,4 +17,7 @@ public interface CategoryService {
     void deleteCategory(Long id);
 
 
+    Category findById(Long id);
+
+    Page<CategoryDto> searchCategorys(String name, Pageable pageable);
 }

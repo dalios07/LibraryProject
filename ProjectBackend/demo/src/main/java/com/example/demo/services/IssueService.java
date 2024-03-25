@@ -8,6 +8,8 @@ import org.springframework.data.domain.Pageable;
 public interface IssueService {
     Page<IssueDto> findAll(Pageable pageable);
 
+    IssueDto findById(Long id);
+
     Issue addIssue(IssueDto IssueDto);
 
     Issue EditIssue(IssueDto IssueDto);

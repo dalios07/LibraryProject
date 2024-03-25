@@ -10,6 +10,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @AllArgsConstructor
 public class CategoryServiceImp implements CategoryService {
@@ -25,11 +27,28 @@ public class CategoryServiceImp implements CategoryService {
         return categories.map(category -> categoryMapper.toCategoryDto(category));
     }
     @Override
+    public Category findById (Long id)
+    {
+        Optional<Category> category=categoryRepository.findById(id);
+        if(category.isPresent())
+            return category.get();
+
+            throw new ResourceNotFoundException("Category not found with id " + id);
+
+    }
+    @Override
     public Category findByNameAndStatus (String name)
     {
         if (!categoryRepository.existsByNameAndStatus(name,status.ACTIVATED)) {
             throw new ResourceNotFoundException("Category not found with name " + name);}
         return categoryRepository.findByNameAndStatus(name, status.ACTIVATED);
+    }
+    @Override
+    public Page<CategoryDto> searchCategorys(String name,Pageable pageable)
+    {
+        Page<Category> categories=categoryRepository.findByNameContainingIgnoreCase(name, pageable);
+        return categories.map(category -> categoryMapper.toCategoryDto(category));
+
     }
 
     @Override
@@ -45,5 +64,7 @@ public class CategoryServiceImp implements CategoryService {
         }
         categoryRepository.deleteById(id);
     }
+
+
 
 }

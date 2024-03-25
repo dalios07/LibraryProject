@@ -5,6 +5,7 @@ import com.example.demo.entites.Category;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 import com.example.demo.services.CategoryService;
 
@@ -24,6 +25,22 @@ public class CategoryController {
         return(categoryService.findAll(pageable));
 
     }
+    @GetMapping("/{id}")
+
+    public Category GetById(@PathVariable("id") Long id)
+    {
+
+        return(categoryService.findById(id));
+
+    }
+    @GetMapping("/search")
+
+    public Page<CategoryDto> search(@RequestParam("name") String name,Pageable pageable)
+    {
+
+        return(categoryService.searchCategorys(name,pageable));
+
+    }
 
     @PostMapping
 
@@ -34,7 +51,7 @@ public class CategoryController {
 
     }
     @DeleteMapping("/{id}")
-    public void Delete(@PathVariable Long id)
+    public void Delete(@PathVariable("id") Long id)
     {
         categoryService.deleteCategory(id);
     }
