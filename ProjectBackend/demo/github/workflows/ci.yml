@@ -12,4 +12,4 @@ jobs:
     steps:
 
       - name: Afficher un message
-        run: echo "Hello CI/CD"
+        run: echo "Hello CI/CD ...."
