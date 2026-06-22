@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Afficher la date
+        run: date
 
-      - name: Afficher un message n
-        run: echo "Hello CI/CD ...."
+      - name: Afficher le dossier courant
+        run: pwd
+
+      - name: Afficher les fichiers
+        run: ls -la
