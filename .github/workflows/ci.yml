@@ -22,5 +22,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Tester Maven depuis la racine
+      - name: Compiler le backend
         run: mvn clean compile
+        working-directory: ProjectBackend/demo
