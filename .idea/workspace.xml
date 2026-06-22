@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :Tester Maven depuis la racine">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-    </list>
+    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :Compiler le backend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +47,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject",
+    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject/ProjectBackend/demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709669084978</updated>
-      <workItem from="1781966474942" duration="6791000" />
+      <workItem from="1781966474942" duration="6905000" />
     </task>
     <task id="LOCAL-00001" summary="correct workflos path">
       <option name="closed" value="true" />
@@ -148,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782136492881</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="change  workflow :Compiler le backend">
+      <option name="closed" value="true" />
+      <created>1782137085608</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1782137085608</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +168,7 @@
     <MESSAGE value="change  workflow :Explorer l'environnement du runner" />
     <MESSAGE value="change  workflow :setup-java" />
     <MESSAGE value="change  workflow :Tester Maven depuis la racine" />
-    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :Tester Maven depuis la racine" />
+    <MESSAGE value="change  workflow :Compiler le backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :Compiler le backend" />
   </component>
 </project>
