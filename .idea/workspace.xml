@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :change to java17">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectBackend/demo/src/main/java/com/example/demo/LibraryBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectBackend/demo/src/main/java/com/example/demo/LibraryBackendApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :Exécuter les tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +47,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject",
+    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject/ProjectBackend/demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709669084978</updated>
       <workItem from="1781966474942" duration="6905000" />
-      <workItem from="1782137984819" duration="1162000" />
+      <workItem from="1782137984819" duration="1464000" />
     </task>
     <task id="LOCAL-00001" summary="correct workflos path">
       <option name="closed" value="true" />
@@ -166,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782138027891</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="change  workflow :Exécuter les tests">
+      <option name="closed" value="true" />
+      <created>1782139607740</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1782139607740</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +187,7 @@
     <MESSAGE value="change  workflow :Tester Maven depuis la racine" />
     <MESSAGE value="change  workflow :Compiler le backend" />
     <MESSAGE value="change  workflow :change to java17" />
-    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :change to java17" />
+    <MESSAGE value="change  workflow :Exécuter les tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :Exécuter les tests" />
   </component>
 </project>
