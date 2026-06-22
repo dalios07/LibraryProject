@@ -28,4 +28,4 @@ jobs:
 
       - name: Exécuter les tests
         run: mvn test
-        working-directory: ProjectBackend
+        working-directory: ProjectBackend/demo
