@@ -11,5 +11,9 @@ public class LibraryBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryBackendApplication.class, args);
 	}
+	@Test
+	void testAddition() {
+		assertEquals(5, 3 + 2);
+	}
 
 }

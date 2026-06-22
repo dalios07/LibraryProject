@@ -25,3 +25,7 @@ jobs:
       - name: Compiler le backend
         run: mvn clean compile
         working-directory: ProjectBackend/demo
+
+      - name: Exécuter les tests
+        run: mvn test
+        working-directory: ProjectBackend
