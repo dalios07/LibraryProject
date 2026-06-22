@@ -22,8 +22,5 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Version Java après setup-java
-        run: java -version
-
-      - name: Version Maven après setup-java
-        run: mvn -version
+      - name: Tester Maven depuis la racine
+        run: mvn clean compile
