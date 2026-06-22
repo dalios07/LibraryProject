@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Télécharger le dépôt
-        uses: actions/checkout@v4
 
-      - name: Afficher le dossier courant
-        run: pwd
+      - uses: actions/checkout@v4
 
-      - name: Lister les fichiers
-        run: ls -la
+      - name: Vérifier Java
+        run: java -version
+
+      - name: Vérifier Maven
+        run: mvn -version
