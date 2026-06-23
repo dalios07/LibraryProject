@@ -29,3 +29,18 @@ jobs:
       - name: Exécuter les tests
         run: mvn test
         working-directory: ProjectBackend/demo
+
+      - name: Package application
+        run: mvn clean package
+        working-directory: ProjectBackend/demo
+
+      - name: Afficher target
+        run: ls -lh target
+        working-directory: ProjectBackend/demo
+
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-jar
+          path: ProjectBackend/target/*.jar
