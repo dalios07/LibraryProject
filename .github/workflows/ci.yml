@@ -38,12 +38,11 @@ jobs:
         run: ls -lh target
         working-directory: ProjectBackend/demo
 
+      - name: Build Docker Image
+        run: docker build -t library-backend:latest .
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: backend-jar
-          path: ProjectBackend/demo/target/*.jar
+
+
   deploy:
 
     needs: build
@@ -51,14 +50,7 @@ jobs:
 
     steps:
 
-      - name: Download Artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: backend-jar
-
       - name: Voir les fichiers
         run: ls -R
 
-      - name: Build Docker Image
-        run: docker build -t library-backend:latest .
-        working-directory: ProjectBackend/demo
+
