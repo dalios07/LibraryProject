@@ -15,4 +15,16 @@ class CalculatorTest {
     void test2() {
         assertEquals(6, 3 + 3);
     }
+    @Test
+    void test3() {
+        assertEquals(7, 3 + 3);
+    }
+    @Test
+    void test4() {
+        assertEquals(7, 4 + 3);
+    }
+    @Test
+    void test5() {
+        assertEquals(8, 4 + 4);
+    }
 }
