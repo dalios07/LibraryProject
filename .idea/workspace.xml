@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :Exécuter les tests">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :test pull request">
       <change beforePath="$PROJECT_DIR$/ProjectBackend/demo/src/test/java/com/example/demo/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectBackend/demo/src/test/java/com/example/demo/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709669084978</updated>
       <workItem from="1781966474942" duration="6905000" />
-      <workItem from="1782137984819" duration="4607000" />
+      <workItem from="1782137984819" duration="5074000" />
     </task>
     <task id="LOCAL-00001" summary="correct workflos path">
       <option name="closed" value="true" />
@@ -206,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782200547062</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="change  workflow :test pull request">
+      <option name="closed" value="true" />
+      <created>1782201960573</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1782201960573</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +230,7 @@
     <MESSAGE value="change  workflow :Compiler le backend" />
     <MESSAGE value="change  workflow :change to java17" />
     <MESSAGE value="change  workflow :Exécuter les tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :Exécuter les tests" />
+    <MESSAGE value="change  workflow :test pull request" />
+    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :test pull request" />
   </component>
 </project>

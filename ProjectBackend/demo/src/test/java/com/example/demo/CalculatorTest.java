@@ -19,4 +19,8 @@ class CalculatorTest {
     void test3() {
         assertEquals(7, 3 + 3);
     }
+    @Test
+    void test4() {
+        assertEquals(7, 4 + 3);
+    }
 }
