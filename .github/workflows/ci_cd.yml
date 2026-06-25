@@ -62,7 +62,11 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Print message
-        run: echo "Hello from my PC"
+      - name:  Deploy app
+        run: |
+          cd ~/deploy-lib-app
+          docker compose down
+          docker compose pull
+          docker compose up -d
 
 
