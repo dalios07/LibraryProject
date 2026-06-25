@@ -75,7 +75,7 @@
       <workItem from="1781966474942" duration="6905000" />
       <workItem from="1782137984819" duration="5074000" />
       <workItem from="1782287803183" duration="1944000" />
-      <workItem from="1782377917568" duration="3668000" />
+      <workItem from="1782377917568" duration="4299000" />
     </task>
     <task id="LOCAL-00001" summary="correct workflos path">
       <option name="closed" value="true" />
@@ -261,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782387956656</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="change  workflow :test self hosted  runner">
+      <option name="closed" value="true" />
+      <created>1782388602178</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1782388602178</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
