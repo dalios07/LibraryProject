@@ -59,11 +59,10 @@ jobs:
   deploy:
 
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
-
-      - name: Voir les fichiers
-        run: ls -R
+      - name: Print message
+        run: echo "Hello from my PC"
 
 

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :deploy">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci_cd.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject/ProjectBackend/demo",
+    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +77,8 @@
       <updated>1709669084978</updated>
       <workItem from="1781966474942" duration="6905000" />
       <workItem from="1782137984819" duration="5074000" />
+      <workItem from="1782287803183" duration="1944000" />
+      <workItem from="1782377917568" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="correct workflos path">
       <option name="closed" value="true" />
