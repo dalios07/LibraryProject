@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :test self hosted  runner">
+    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :run docker compose">
+      <change afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci_cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci_cd.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +51,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject",
+    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject/ProjectFront/LibraryFront",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +60,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ProjectFront/LibraryFront" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,7 +84,7 @@
       <workItem from="1781966474942" duration="6905000" />
       <workItem from="1782137984819" duration="5074000" />
       <workItem from="1782287803183" duration="1944000" />
-      <workItem from="1782377917568" duration="5304000" />
+      <workItem from="1782377917568" duration="8881000" />
     </task>
     <task id="LOCAL-00001" summary="correct workflos path">
       <option name="closed" value="true" />
@@ -279,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782389223342</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="change  workflow :run docker compose">
+      <option name="closed" value="true" />
+      <created>1782389892503</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1782389892503</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +315,7 @@
     <MESSAGE value="change  workflow :Package et Artifact" />
     <MESSAGE value="change  workflow :deploy" />
     <MESSAGE value="change  workflow :test self hosted  runner" />
-    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :test self hosted  runner" />
+    <MESSAGE value="change  workflow :run docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :run docker compose" />
   </component>
 </project>

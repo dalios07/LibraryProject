@@ -5,7 +5,7 @@ on:
 
 jobs:
 
-  build:
+  build-backend:
 
     runs-on: ubuntu-latest
 
@@ -55,10 +55,45 @@ jobs:
 
 
 
+  build-frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ProjectFront/LibraryFront
+
+      - name: Build Angular application
+        run: npm run build
+        working-directory:  ProjectFront/LibraryFront
+
+      - name: Login to Docker Hub
+        run: |
+          echo "${{ secrets.DOCKERHUB_TOKEN }}" | \
+          docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+
+      - name: Build Docker Image
+        run: |
+          docker build \
+            -t "${{ secrets.DOCKERHUB_USERNAME }}"/library-frontend:latest \
+            .
+        working-directory: ProjectFront/LibraryFront
+
+      - name: Push Docker Image
+        run: docker push "${{ secrets.DOCKERHUB_USERNAME }}"/library-frontend:latest
+
+
 
   deploy:
 
-    needs: build
+    needs: build-frontend
     runs-on: self-hosted
 
     steps:
@@ -68,5 +103,8 @@ jobs:
           docker compose down
           docker compose pull
           docker compose up -d
+
+      - name: Verify deployment
+        run: docker ps
 
 

@@ -29,6 +29,16 @@ services:
       db:
         condition: service_healthy
 
+  frontend:
+    container_name: lib-front
+    build: medali007/library-frontend:latest
+
+    ports:
+      - "4202:80"
+
+    depends_on:
+      - backend
+
 
 volumes:
     mysql_data0:
