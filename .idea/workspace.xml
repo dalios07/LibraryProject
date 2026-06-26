@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :add frontend" />
+    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :add frontend">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +82,7 @@
       <workItem from="1781966474942" duration="6905000" />
       <workItem from="1782137984819" duration="5074000" />
       <workItem from="1782287803183" duration="1944000" />
-      <workItem from="1782377917568" duration="10379000" />
+      <workItem from="1782377917568" duration="11281000" />
     </task>
     <task id="LOCAL-00001" summary="correct workflos path">
       <option name="closed" value="true" />
@@ -330,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782464136215</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="change  workflow :add frontend">
+      <option name="closed" value="true" />
+      <created>1782464433948</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1782464433948</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
