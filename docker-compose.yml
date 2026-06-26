@@ -31,7 +31,7 @@ services:
 
   frontend:
     container_name: lib-front
-    build: medali007/library-frontend:latest
+    image: medali007/library-frontend:latest
 
     ports:
       - "4202:80"
