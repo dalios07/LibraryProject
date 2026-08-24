@@ -11,13 +11,13 @@ import {environment} from "../../environments/environment";
 })
 export class AuthenticationService {
 
-  baseUrl=environment.apiUrl
+  baseUrl=environment.apiUrl+"/auth"
   constructor( private httpclient: HttpClient) { }
 
   add(request:RegisterRequest):Observable<any>
   {
 
-    return(this.httpclient.post(this.baseUrl+"/auth/register", request));
+    return(this.httpclient.post(this.baseUrl+"/register", request));
   }
   authenticate(request:AuthRequest):Observable<any>
   {
