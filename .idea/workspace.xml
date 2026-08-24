@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :add frontend">
-      <change afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFront/LibraryFront/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/service/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/service/authentication.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change backend url in front end" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -392,6 +385,7 @@
     <MESSAGE value="change  workflow :test self hosted  runner" />
     <MESSAGE value="change  workflow :run docker compose" />
     <MESSAGE value="change  workflow :add frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="change  workflow :add frontend" />
+    <MESSAGE value="change backend url in front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="change backend url in front end" />
   </component>
 </project>
