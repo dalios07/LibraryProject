@@ -25,6 +25,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StudentComponent } from './student/student.component';
 import { User } from './module/User';
+import { environment } from '../environments/environment';
 
 
 
@@ -44,7 +45,7 @@ import { User } from './module/User';
     SignUpComponent,
     SignInComponent,
     StudentComponent
-    
+
   ],
   imports: [
     BrowserModule,
@@ -58,35 +59,35 @@ import { User } from './module/User';
     {
       provide:'CategoryCrudService',
       useFactory: (http: HttpClient) => {
-        return new CrudService<Category>(http,{url:"http://localhost:9080/api/Category"});
+        return new CrudService<Category>(http,{url:`${environment.apiUrl}/Category`});
       },
       deps: [HttpClient]
     },
     {
       provide:'AuthorCrudService',
       useFactory: (http: HttpClient) => {
-        return new CrudService<Author>(http,{url:"http://localhost:9080/api/Author"});
+        return new CrudService<Author>(http,{url:`${environment.apiUrl}/Author`});
       },
       deps: [HttpClient]
     },
     {
       provide:'BookCrudService',
       useFactory: (http: HttpClient) => {
-        return new CrudService<Book>(http,{url:"http://localhost:9080/api/Book"});
+        return new CrudService<Book>(http,{url:`${environment.apiUrl}/Book`});
       },
       deps: [HttpClient]
     },
     {
       provide:'IssueCrudService',
       useFactory: (http: HttpClient) => {
-        return new CrudService<Issue>(http,{url:"http://localhost:9080/api/Issue"});
+        return new CrudService<Issue>(http,{url:`${environment.apiUrl}/Issue`});
       },
       deps: [HttpClient]
     },
     {
       provide:'UserCrudService',
       useFactory: (http: HttpClient) => {
-        return new CrudService<User>(http,{url:"http://localhost:9080/api/user"});
+        return new CrudService<User>(http,{url:`${environment.apiUrl}/user`});
       },
       deps: [HttpClient]
     }

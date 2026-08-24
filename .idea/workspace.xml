@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :add frontend" />
+    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change  workflow :add frontend">
+      <change afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectFront/LibraryFront/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/service/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/service/authentication.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,12 +61,13 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/LibraryProject/ProjectFront/LibraryFront",
+    "last_opened_file_path": "/home/mohamedalimathlouthi/Desktop/quest-pe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/snap/intellij-idea-ultimate/816/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -64,8 +79,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
       </set>
     </attachedChunks>
   </component>
@@ -80,7 +95,7 @@
       <workItem from="1781966474942" duration="6905000" />
       <workItem from="1782137984819" duration="5074000" />
       <workItem from="1782287803183" duration="1944000" />
-      <workItem from="1782377917568" duration="11657000" />
+      <workItem from="1782377917568" duration="12390000" />
     </task>
     <task id="LOCAL-00001" summary="correct workflos path">
       <option name="closed" value="true" />
@@ -346,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782465085556</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="change  workflow :add frontend">
+      <option name="closed" value="true" />
+      <created>1782465517940</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1782465517941</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
