@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { RegisterRequest } from '../module/registerRequest';
 import { AuthRequest } from '../module/authRequest';
-import { environment } from '../environments/environment';
+import {environment} from "../../environments/environment";
 
 
 @Injectable({
@@ -12,7 +12,6 @@ import { environment } from '../environments/environment';
 export class AuthenticationService {
 
   baseUrl=environment.apiUrl
-
   constructor( private httpclient: HttpClient) { }
 
   add(request:RegisterRequest):Observable<any>
