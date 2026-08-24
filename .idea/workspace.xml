@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="change backend url in front end">
+    <list default="true" id="06519674-610c-46fe-9dda-0439e698dc8c" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci_cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci_cd.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/service/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectFront/LibraryFront/src/app/service/authentication.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -388,6 +389,7 @@
     <MESSAGE value="change  workflow :run docker compose" />
     <MESSAGE value="change  workflow :add frontend" />
     <MESSAGE value="change backend url in front end" />
-    <option name="LAST_COMMIT_MESSAGE" value="change backend url in front end" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

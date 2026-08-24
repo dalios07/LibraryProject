@@ -83,12 +83,12 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build \
-            -t "${{ secrets.DOCKERHUB_USERNAME }}"/library-frontend:latest-v4 \
+            -t "${{ secrets.DOCKERHUB_USERNAME }}"/library-frontend:latest-v5 \
             .
         working-directory: ProjectFront/LibraryFront
 
       - name: Push Docker Image
-        run: docker push "${{ secrets.DOCKERHUB_USERNAME }}"/library-frontend:latest-v4
+        run: docker push "${{ secrets.DOCKERHUB_USERNAME }}"/library-frontend:latest-v5
 
 
 

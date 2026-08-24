@@ -17,7 +17,7 @@ export class AuthenticationService {
   add(request:RegisterRequest):Observable<any>
   {
 
-    return(this.httpclient.post(this.baseUrl+"/register", request));
+    return(this.httpclient.post(this.baseUrl+"/auth/register", request));
   }
   authenticate(request:AuthRequest):Observable<any>
   {
